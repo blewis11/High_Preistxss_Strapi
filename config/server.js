@@ -1,4 +1,8 @@
 module.exports = ({ env }) => ({
+  ssl: {
+    disabled: false,
+    trustProxy: false
+  },
   host: env("HOST", "0.0.0.0"),
   port: env.int("PORT", 1337),
   url: "https://www.thehighpriestxss.com/api",
